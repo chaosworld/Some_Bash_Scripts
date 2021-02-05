@@ -17,9 +17,9 @@ HOST_LISTEN_PORT="`echo $OPTION_R_ARG | cut -d':' -f2`"
 DESC="`sed -n '2,6p' $0 | sed \"s/# *//\"`"
 Usage ()
 {
-	        echo -e "$DESC\n\nUsage: sh $0 [--restart]>\n"\
+	echo -e "$DESC\n\nUsage: sh $0 [--restart]>\n"\
 			>&2
-		exit 2
+	exit 2
 }
  
 NOT_RESTART=${NOT_RESTART-1}
